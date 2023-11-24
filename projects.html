@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Pale Pink (#FFD7E1), Piggy Pink (#FEE0E7), Linen (#FCE8ED), Lavender Blush (#FBF1F3) and Ghost White (#F9F9F9). -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffd7e1;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #FCE8ED;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center the content */
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .project-image {
+            width: 100%;
+            max-width: 500px; /* Adjust the max width of the image */
+            height: auto;
+            border-radius: 20px;
+            display: block; /* Center the images */
+            margin: 20px auto; /* Center the images and add spacing */
+        }
+
+        /* Add additional styles based on your preferences */
+
+        /* Back button styles */
+        .back-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Projects Section -->
+    <section>
+        <h2>LM555 Timer</h2>
+        <p>
+            Designing a PCB for an LM555 timer keychain involves creating a small circuit that incorporates the LM555 timer IC along with other components necessary for the keychain's operation.
+        </p>
+        <p>
+            Used a schematic capture tool (Eagle) to design the circuit. 
+            Placed the LM555 timer IC on the schematic, and connected it to other components such as resistors, capacitors, and LEDs as per your design requirements
+            all on the software. Below is an example of the schematic.
+        </p>
+
+        <img src="custom_diagram_1_LM555.gif" alt="timer" class="project-image">
+        <p>
+            Next is the assembly of components onto the PCB according to the assembly drawings. 
+            Components must be properly soldered with the help of tools such as flux.
+            Below is an example of the LED components that were used. 
+            The arrows must be pointed away from the center.
+        </p>
+        <img src="led.jpeg" alt="timer" class="project-image">
+        <p> Next, the keychain must be placed in an infrared oven for proper setting of the solder. </p>
+        <img src="infared.jpg" alt="timer" class="project-image">
+        <p> Finally, the capacitors and resistors must be hand-soldered on the back of the keychain.
+            It can be plugged into a USB-C charger to achieve this lighting effect </p>
+        <img src="finished.jpeg" alt="timer" class="project-image">
+        <br>
+        <p>  </p>
+        <br>
+        <!-- Back button -->
+        <a href="index2.html" class="back-button">Back to Homepage</a>
+    </section>
+
+</body>
+</html>
